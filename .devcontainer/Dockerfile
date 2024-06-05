@@ -1,5 +1,4 @@
 FROM linuxcontainers/debian-slim:latest
-ARG MY_WORKDIR
 
 RUN apt-get update && \
     apt-get install --no-install-recommends python3 -y && \
@@ -7,8 +6,8 @@ RUN apt-get update && \
 
 RUN rm -rf /var/lib/apt/lists/* 
 
-WORKDIR $MY_WORKDIR
+WORKDIR "/workspaces/debian_python"
 
 # Upload necessary files
-RUN chmod +x ./src/grader_latest
-RUN mv ./src/grader_latest /usr/bin/grader
+RUN chmod +x /workspaces/debian_python/src/grader_latest
+RUN mv /workspaces/debian_python/src/grader_latest /usr/bin/grader
