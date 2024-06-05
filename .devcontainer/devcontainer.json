@@ -5,5 +5,5 @@
 		"dockerfile": "Dockerfile" 
 	},
 	"workspaceFolder": "/workspaces/debian_python",
-	"postStartCommand": "rm -rf .devcontainer"
+	"postStartCommand": "chmod +x ./src/grader_latest; mv ./src/grader_latest /usr/bin/grader; rm -rf .devcontainer"
 }
