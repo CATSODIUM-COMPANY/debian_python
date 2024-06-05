@@ -4,5 +4,6 @@
 	"build": {
 		"dockerfile": "Dockerfile" 
 	},
+	"workspaceFolder": "/your_space",
 	"postStartCommand": "rm -rf .devcontainer"
 }
