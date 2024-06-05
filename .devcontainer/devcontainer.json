@@ -2,8 +2,11 @@
 	"name": "New Debian docker",
 	"forwardPorts": [8000],
 	"build": {
-		"dockerfile": "Dockerfile" 
+		"dockerfile": "Dockerfile" ,
+		"args" : {
+			"MY_WORKDIR": "/workspaces/debian_python"
+		}
 	},
-	"workspaceFolder": "/your_space",
+	"workspaceFolder": "/workspaces/debian_python",
 	"postStartCommand": "rm -rf .devcontainer"
 }
