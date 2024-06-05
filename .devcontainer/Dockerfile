@@ -1,5 +1,5 @@
 FROM linuxcontainers/debian-slim:latest
-
+ARG MY_WORKDIR
 
 RUN apt-get update && \
     apt-get install --no-install-recommends python3 -y && \
@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 RUN rm -rf /var/lib/apt/lists/* 
 
-WORKDIR "/your_space"
+WORKDIR $MY_WORKDIR
 
 # Upload necessary files
 #RUN mkdir src
