@@ -8,6 +8,3 @@ RUN rm -rf /var/lib/apt/lists/*
 
 WORKDIR "/workspaces/debian_python"
 
-# Upload necessary files
-RUN chmod +x /workspaces/debian_python/src/grader_latest
-RUN mv /workspaces/debian_python/src/grader_latest /usr/bin/grader
