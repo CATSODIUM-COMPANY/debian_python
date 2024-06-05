@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 RUN rm -rf /var/lib/apt/lists/* 
 
-#WORKDIR /your_space
+WORKDIR /workspaces/debian_python
 
 # Upload necessary files
 RUN mkdir src
