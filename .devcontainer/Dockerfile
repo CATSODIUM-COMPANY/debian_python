@@ -10,9 +10,5 @@ RUN rm -rf /var/lib/apt/lists/*
 WORKDIR $MY_WORKDIR
 
 # Upload necessary files
-RUN mkdir src
-ADD src/*  ./src/.
-ADD README.md .
 RUN chmod +x ./src/grader_latest
-
 RUN mv ./src/grader_latest /usr/bin/grader
