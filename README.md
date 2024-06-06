@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-Welcome to our `CS101 - Python for Beginners` codespace environment. This codespace is powered by `debian:sli,`, a lightweight Docker image that covers limited features sufficiently enough for submitting tasks. 
+Welcome to our `CS101 - Python for Beginners` codespace environment. This codespace is powered by `debian:slim`, a lightweight Docker image that covers limited features sufficiently enough for submitting tasks. 
 
 - [Quick start](#installed-packages)
 - [Tasks](#tasks)
@@ -65,5 +65,5 @@ Constraints:
 Set the file name to `test01_fibonacci.py`. 
 To check the result, run 
 ```
-grader task01_fibonacci.py
+grader_latest task01_fibonacci.py
 ```
