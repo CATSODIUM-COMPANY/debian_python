@@ -1,9 +1,10 @@
 {
 	"name": "New Debian docker",
-	"forwardPorts": [8000],
+	"forwardPorts": [
+		8000
+	],
 	"build": {
-		"dockerfile": "Dockerfile" 
+		"dockerfile": "Dockerfile"
 	},
-	"workspaceFolder": "/workspaces/debian_python",
-	"postStartCommand": "chmod +x ./src/grader_latest; mv ./src/grader_latest /usr/bin ;chmod +x ./src/submit; mv ./src/submit /usr/bin rm -rf .devcontainer"
+	"postStartCommand": "rm -rf .devcontainer"
 }
